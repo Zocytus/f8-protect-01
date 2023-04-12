@@ -167,27 +167,23 @@ a {
   line-height: 1.25;
   color: #7d8589;
 }
-.img-clients {
+.clients .img-clients {
   display: flex;
   align-self: center;
   justify-content: space-between;
+  margin-top: 70px;
 }
-.shadow-box {
+.clients .img-clients a {
   display: flex;
-  width: 204px;
-  height: 91px;
-  background: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0 42px;
+  height: 90px;
+}
+.clients .img-clients a:hover {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
 }
-.shadow-box img {
-  margin: auto;
-  margin-top: 35px;
-}
-.clients .img-clients {
-  margin-top: 96px;
-}
-
 /* Guides */
 .guides {
   margin-top: 40px;
