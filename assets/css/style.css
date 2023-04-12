@@ -6,8 +6,10 @@
   --transition-color: 0.5s ease;
 }
 
-html {
+html,
+body {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   font-size: 1.6rem;
@@ -35,7 +37,7 @@ a {
   text-decoration: none;
 }
 .btn {
-  display: inline;
+  display: inline-block;
   min-width: 90px;
   padding: 18px 16px;
   background: var(--primary-color);
@@ -46,16 +48,26 @@ a {
   color: #ffffff;
 }
 /* Header */
-.header {
+.fix-header {
   background-color: #e6f0ff;
-  height: 100vh;
+  padding-top: 26px;
+  position: sticky;
+  top: -26px;
+  z-index: 1;
+}
+.hero-wrap {
+  background-color: #e6f0ff;
+  height: calc(100vh - 90px);
   position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .navbar {
   display: flex;
   align-items: center;
-  padding-top: 50px;
+  padding: 12px 0;
 }
 .navbar ul {
   display: flex;
@@ -97,10 +109,6 @@ a {
 .navbar .action-btn:hover {
   transition: var(--transition-color);
   opacity: 0.7;
-}
-
-.hero {
-  margin-top: 130px;
 }
 .hero .info {
   width: 51%;
