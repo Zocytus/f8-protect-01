@@ -85,6 +85,7 @@
     <!-- Link Css -->
     <link rel="stylesheet" href="./assets/css/rerset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
     <!-- Link Font -->
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -99,17 +100,27 @@
     <header class="fix-header">
       <div class="content">
         <nav class="navbar">
+          <!-- Table and mobile -->
+          <label for="menu-checkbox" class="toggle-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                fill="currentColor"
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </label>
           <!-- Logo -->
           <a href="#home">
-            <img src="./assets/img/Logo.svg" alt="Besnik." />
+            <img class="logo" src="./assets/img/Logo.svg" alt="Besnik." />
           </a>
           <!-- Nav Item -->
-          <ul>
+          <ul id="pc-nav">
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#featured">Features</a></li>
             <li><a href="#resources">Resources</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="show-on-mobile separate"><a href="#!">Sign in</a></li>
+            <li class="show-on-mobile"><a href="#!">Sign up</a></li>
           </ul>
           <!-- Action -->
           <div class="actions">
@@ -117,6 +128,36 @@
             <a href="#!" class="btn action-btn">Sign up</a>
           </div>
         </nav>
+      </div>
+    </header>
+    <!-- Table mobile header  -->
+    <header class="mobile-header">
+      <input
+        type="checkbox"
+        name="menu-checkbox"
+        id="menu-checkbox"
+        class="menu-checkbox"
+        hidden
+      />
+
+      <!-- Overlay -->
+      <label for="menu-checkbox" class="menu-overlay"></label>
+
+      <!-- Menu content -->
+
+      <div class="menu-drawer">
+        <!-- Logo -->
+        <a href="#home">
+          <img src="./assets/img/Logo.svg" alt="Besnik." />
+        </a>
+        <!-- Nav Item -->
+        <ul id="mobile-nav"></ul>
+        <script>
+          const pcNav = document.querySelector("#pc-nav");
+          const mobileNav = document.querySelector("#mobile-nav");
+
+          mobileNav.innerHTML = pcNav.innerHTML;
+        </script>
       </div>
     </header>
     <main id="home">
