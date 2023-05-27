@@ -62,6 +62,74 @@
   .separate {
     border-top: 1px solid #ebebeb;
   }
+  .hero-img {
+    display: none;
+  }
+  .hero-wrap .info {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hero-wrap .desc {
+    width: 80%;
+    margin: 30px auto auto;
+  }
+  .clients .img-clients {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .list-guides .guides-item {
+    margin: 0;
+    flex: 1;
+  }
+  .featured .list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .starts .row {
+    flex-direction: column;
+  }
+  .starts .img-block,
+  .starts .info {
+    width: 100%;
+  }
+  .starts .img-block {
+    order: 2;
+    margin-top: 80px;
+  }
+  .starts .info {
+    order: 1;
+    padding: 0;
+  }
+  .starts .sub-title {
+    width: 70%;
+  }
+  .starts .info .desc {
+    width: 100%;
+  }
+  .starts .row-qty {
+    flex-direction: row;
+  }
+  .starts .qty {
+    font-size: 5rem;
+  }
+  .starts .qty-desc {
+    font-size: 1.5rem;
+  }
+  .subscription .image-phone {
+    display: none;
+  }
+  .footer .row-top {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    row-gap: 80px;
+  }
+  .footer .row-bottom .logo {
+    position: inherit;
+    transform: none;
+  }
+  .hero-btn {
+    margin-top: 16px;
+  }
 }
 /* Table */
 @media screen and (min-width: 768px) and (max-width: 991px) {

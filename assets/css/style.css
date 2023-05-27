@@ -321,10 +321,17 @@ a {
   transition: 0.5s ease-in-out;
 }
 
-.featured .list {
+footer .row-top {
   margin-top: 70px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+}
+.featured .list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 70px;
 }
 .featured .item {
   flex: 1;
@@ -587,7 +594,7 @@ a {
   display: flex;
 }
 .footer .row-top {
-  gap: 185px;
+  column-gap: 185px;
 }
 .footer .heading {
   font-family: "Poppins";
