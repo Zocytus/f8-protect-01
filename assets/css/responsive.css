@@ -139,11 +139,73 @@
 }
 /* Mobile */
 @media screen and (max-width: 767px) {
+  .row p:first-child {
+    margin-top: 16px;
+  }
+  .hide-on-mobile {
+    display: none !important;
+  }
   .menu-drawer {
     padding: 40px;
     inset: 0 25% 0 0;
   }
   .navbar .actions {
     display: none;
+  }
+  .hero .heading {
+    font-size: 5rem;
+  }
+  .hero-wrap .desc {
+    margin: 15px auto auto;
+  }
+  .hero-btn {
+    margin: 16px 0;
+  }
+  .hero-wrap {
+    height: 100vh;
+  }
+  .hero-wrap .desc {
+    font-size: 1.6rem;
+  }
+  .list-guides {
+    flex-direction: column;
+    row-gap: 80px;
+  }
+  .featured .list {
+    grid-template-columns: 1fr;
+  }
+  .starts .sub-title {
+    width: 100%;
+  }
+  .starts .row-qty {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 80px;
+  }
+  .subscription .info {
+    padding: 24px;
+  }
+  .subscription .body {
+    height: auto;
+  }
+  .footer .row-top {
+    grid-template-columns: 1fr;
+  }
+  .footer .row-bottom {
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: flex-start;
+  }
+  .clients .img-clients {
+    row-gap: 30px;
+  }
+
+  .starts-trend {
+    position: relative;
+    display: block;
+    width: inherit;
+  }
+  .starts .img-block {
+    display: flex;
   }
 }
